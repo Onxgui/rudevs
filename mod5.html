@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas e Hábitos Financeiros</title>
+    <link rel="stylesheet" href="src/mod5.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <div class="circle-bg"></div>
+            <span>RU</span>
+            <h2>DEVS</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="mod1.html">MOD1</a></li>
+                <li><a href="mod2.html">MOD2</a></li>
+                <li><a href="mod3.html">MOD3</a></li>
+                <li><a href="mod4.html">MOD4</a></li>
+                <li><a href="mod5.html">MOD5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <div class="texto">
+                <h1>Plano Financeiro Pessoal</h1>
+
+                <h2>Como montar um plano financeiro eficiente</h2>
+
+                <p>
+                    Defina seus objetivos — curto, médio e longo prazo. Liste suas fontes de renda, gastos fixos e variáveis.
+                    Monte um orçamento realista e separe uma parte para investimentos e emergências.
+                    O segredo é clareza: saiba exatamente para onde seu dinheiro vai.
+                </p>
+                <h2>Dicas de leitura, canais e cursos gratuitos</h2>
+                <p>
+                    Busque conhecimento constante. Livros como <em>“O Homem Mais Rico da Babilônia”</em> e <em>“Me Poupe!”</em> ajudam a mudar a mentalidade financeira.
+                    Canais como <strong>Me Poupe!</strong>, <strong>EconoIC</strong> e <strong>Primo Rico</strong> trazem conteúdo prático.
+                    Plataformas como <strong>FGV Online</strong> e <strong>Sebrae</strong> oferecem cursos gratuitos sobre finanças pessoais.
+                </p>
+
+                <h2>Como manter o foco e revisar estratégias</h2>
+                <p>
+                    Revise seu plano mensalmente. Ajuste metas, corte gastos desnecessários e celebre pequenas conquistas.
+                    Use planilhas ou aplicativos para acompanhar o progresso e mantenha a disciplina — consistência vale mais que velocidade.
+                </p>
+
+                <h2>Reajustando sua estratégia financeira</h2>
+                <p>
+                    A vida muda, e o plano também deve mudar. Reavalie prioridades, renda e objetivos.
+                    Pequenas correções ao longo do tempo garantem equilíbrio e crescimento contínuo.
+                    Adaptar-se é o que transforma um bom plano em um plano duradouro.
+
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="img/lupa.png" alt="Lupa">
+            </div>
+
+        </section>
+    </main>
+    
+    <div class="video-wrapper">
+    <div id="player"></div>
+</div>
+
+<div class="questionario">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzUj0Axp0LwWOujz-dpln_rXXVpm6MLFL9GWuPGeaPsWVpRQ/viewform"> Quiz módulo 5</a>
+</div>
+
+</body>
+
+<footer class="footer">
+
+        <div class="footer-section">
+            <h3>Localização</h3>
+            <p>Rodovia MG-179 Km 0 s/n Bairro Trevo, Alfenas - MG, 37130-000</p><br><br>
+
+        </div>
+
+        <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.instagram.com/unifenas" target="_blank"><button><i class="fab fa-instagram"></i>Instagram</button></a>
+            <a href="https://www.facebook.com/Unifenas" target="_blank"><button><i class="fab fa-facebook"></i>Facebook</button></a>
+            <a href="https://x.com/unifenasbr" target="_blank"><button><i class="fab fa-twitter"></i>X(Twitter)</button></a>
+            <a href="https://www.youtube.com/unifenasbr" target="_blank"><button><i class="fab fa-youtube"></i>Youtube</button></a>
+        </div>
+
+
+
+        <div class="footer-section" id="contato">
+            <h3>Fale Conosco</h3>
+            <p>Email: <a class="email" href="mailto:centraldeatendimento@unifenas.br"> centraldeatendimento@unifenas.br</a></p>
+            <p>Telefone: <a class="tel" href="tel:3140002386">(31)4000-2386</a></p>
+        </div>
+
+    </footer>
+
+<script>
+        const moduloAtual = 5; 
+
+        
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        let player;
+
+       
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'GbuUtlx7vio&t=5s', 
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                localStorage.setItem(`mod${moduloAtual}_ok`, "true");
+                alert("Módulo concluído! O próximo módulo foi liberado.");
+            }
+        }
+
+        if (localStorage.getItem("mod4_ok") !== "true") {
+    alert("Você precisa concluir o Módulo 4 primeiro.");
+    window.location.href = "mod4.html";
+        }
+    </script>
+
+</html>

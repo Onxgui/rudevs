@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro Pessoal</title>
+    <link rel="stylesheet" href="src/mod2.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <div class="circle-bg"></div>
+            <span>RU</span>
+            <h2>DEVS</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="mod1.html">MOD1</a></li>
+                <li><a href="mod2.html">MOD2</a></li>
+                <li><a href="mod3.html">MOD3</a></li>
+                <li><a href="mod4.html">MOD4</a></li>
+                <li><a href="mod5.html">MOD5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <div class="texto">
+                <h1>CONTROLE FINANCEIRO PESSOAL</h1>
+
+                <h2>Como montar um orçamento simples e funcional</h2>
+                <p>
+                    O primeiro passo para conquistar estabilidade financeira é conhecer bem suas receitas e despesas.
+                    Montar um orçamento não é apenas anotar números, mas entender o comportamento do seu dinheiro e criar uma
+                    relação mais consciente com ele. Um bom orçamento deve ser <strong>realista, simples e adaptável</strong> à sua rotina.
+                </p>
+                <p>
+                    Comece registrando todas as suas fontes de renda e listando seus gastos fixos (como moradia, transporte,
+                    contas e alimentação) e variáveis (como lazer, compras e imprevistos). Ao visualizar tudo de forma clara,
+                    seja em um caderno, planilha ou aplicativo, fica mais fácil perceber excessos e definir metas de economia.
+                </p>
+
+                <h2>Métodos de controle financeiro</h2>
+                <p>
+                    Não existe um método único para controlar suas finanças. O ideal é escolher a forma que mais se adapta ao seu
+                    perfil e manter a constância no acompanhamento.
+                </p>
+                <ul>
+                    <li><strong>Planilha eletrônica:</strong> ideal para quem gosta de analisar números e gerar gráficos.
+                        Permite acompanhar entradas e saídas de forma detalhada.</li>
+                    <li><strong>Aplicativos financeiros:</strong> práticos e modernos, possibilitam registrar gastos em tempo real
+                        e até sincronizar contas bancárias.</li>
+                    <li><strong>Caderno de controle:</strong> ótimo para quem prefere o método tradicional. O ato de escrever ajuda
+                        na percepção dos hábitos de consumo.</li>
+                </ul>
+
+                <h2>Dicas práticas para reduzir gastos sem sofrimento</h2>
+                <p>
+                    Economizar não significa abrir mão do que é importante para você. O segredo está em equilibrar suas escolhas
+                    e adotar hábitos mais conscientes. Veja algumas estratégias simples:
+                </p>
+                <ul>
+                    <li><strong>Evite compras por impulso:</strong> pratique a “regra das 24 horas”. Espere um dia antes de comprar
+                        algo não essencial e reflita se a necessidade ainda existe.</li>
+                    <li><strong>Reavalie serviços contratados:</strong> cancele assinaturas e planos que não utiliza com frequência.
+                        Pequenas economias somadas geram grandes resultados.</li>
+                    <li><strong>Planeje suas refeições:</strong> cozinhar em casa é mais econômico e saudável do que comer fora
+                        com frequência.</li>
+                    <li><strong>Defina metas de economia:</strong> comece com objetivos pequenos, como guardar 10% da renda, e
+                        aumente gradualmente.</li>
+                </ul>
+
+                <p>
+                    Lembre-se: <strong>o controle financeiro não é uma limitação</strong>, e sim uma ferramenta de liberdade.
+                    Quanto mais você entende o seu dinheiro, mais autonomia conquista para realizar seus planos e viver com tranquilidade.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="img/porquinho.png" alt="Cofrinho com dinheiro e moedas">
+            </div>
+        </section>
+    </main>
+
+    <div class="video-wrapper">
+    <div id="player"></div>
+</div>
+
+<div class="questionario">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVeHjl1HAXo0ozwklwTbRcDs91MUatUNR6km8t0MlSYKDlnQ/viewform"> Quiz módulo 2</a>
+</div>
+ 
+</body>
+
+<footer class="footer">
+
+    <div class="footer-section">
+        <h3>Localização</h3>
+        <p>Rodovia MG-179 Km 0 s/n Bairro Trevo, Alfenas - MG, 37130-000</p><br><br>
+
+    </div>
+
+    <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <a href="https://www.instagram.com/unifenas" target="_blank"><button><i class="fab fa-instagram"></i>Instagram</button></a>
+        <a href="https://www.facebook.com/Unifenas" target="_blank"><button><i class="fab fa-facebook"></i>Facebook</button></a>
+        <a href="https://x.com/unifenasbr" target="_blank"><button><i class="fab fa-twitter"></i>X(Twitter)</button></a>
+        <a href="https://www.youtube.com/unifenasbr" target="_blank"><button><i class="fab fa-youtube"></i>Youtube</button></a>
+    </div>
+
+
+
+    <div class="footer-section" id="contato">
+        <h3>Fale Conosco</h3>
+        <p>Email: <a class="email" href="mailto:centraldeatendimento@unifenas.br"> centraldeatendimento@unifenas.br</a></p>
+        <p>Telefone: <a class="tel" href="tel:3140002386">(31)4000-2386</a></p>
+    </div>
+
+</footer>
+
+<script>
+        const moduloAtual = 2; 
+
+    
+        let tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        let firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        let player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'JuaDqODoVzs',
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                localStorage.setItem(`mod${moduloAtual}_ok`, "true");
+                alert("Módulo concluído! O próximo módulo foi liberado.");
+            }
+        }
+
+        if (localStorage.getItem("mod1_ok") !== "true") {
+    alert("Você precisa concluir o Módulo 1 primeiro.");
+    window.location.href = "mod1.html";
+        }
+    </script>
+
+</html>
